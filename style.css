@@ -1,0 +1,83 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #002c5f
+}
+
+body, .input-box {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    background-color: rgb(250, 185, 64);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 700px;
+    max-width: 90%;
+}
+
+.display-screen {
+    grid-column: 1 / -1;
+    display: flex;
+    padding: 10px;
+    border: solid rgb(8, 8, 120);
+    color: #333333 ;
+    word-wrap: break-word;
+    word-break: normal;
+    font-size: 1.5rem;
+    font-family: "Andong";
+    margin-bottom: 1rem;
+}
+
+.input-box {
+    background-color: rgb(255, 204, 0);
+    border: 2px solid;
+    outline: none;
+    width: 100%;
+    height: 8rem;
+    margin: auto;
+    resize: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.btn-layout {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    grid-template-rows: minmax(120px, auto) repeat(2,150px);
+}
+
+.timer, #pop-up {
+    position: absolute;
+    top: 2rem;
+    font-size: 3rem;
+    color: orange;
+    font-weight: bold;
+}
+
+.startBtn {
+    color: rgb(11, 90, 11);
+}
+
+#pop-up {
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 1.5rem;
+    top: 8rem
+}
